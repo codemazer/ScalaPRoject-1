@@ -1,0 +1,99 @@
+@(message: String)
+<script src="@routes.Assets.at("javascripts/jquery-2.1.1.min.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/reveal.js")" type="text/javascript"></script>
+<script>
+    
+$(document).ready(function(){
+    $("#animebtn").click(function(){
+     
+        $("#content").slideToggle();
+    });
+        
+});
+    </script>
+<style>
+    #headerr
+    {
+        background-color:LIGHTGREEN;
+        padding:1%;
+    }
+    body
+    {
+        background-color:WHITE;
+    }
+    </style>
+<link rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/listAnimation.css")">
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/reveal.css")">
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/default.css")" id="theme">
+
+<div class="page-header" id="headerr">
+    <center>
+<h1> Box Office <small> Redifined..</small></h1>
+</center>
+        </div>
+<center>
+<div class="btn-group">
+<button id="animebtn" type="button" class="btn btn-primary">About the App</button>
+<button id="animebtn1" type="button" class="btn btn-primary">Explore</button>
+<button id="animebtn2" type="button" class="btn btn-primary">Feedback</button>
+</div>
+</center>
+<div id="content">
+<div class="reveal">
+<div class="slides">
+    <section>
+					
+					<h3>We are Fabulous</h3>
+					<p>
+						<h4>Created by</h4><small><a href="http://www.facebook.com/pure25">Abhishek</a> / <a href="http://www.facebook.com/pure25">abhi</a></small>
+					</p>
+</section>
+<section>
+					<h2>Here You Are.</h2>
+					<p>
+						This is a WebApp for MovieBuffs
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+<section>
+					<h2>All about the movies</h2>
+					<p>
+						Suggestions by moods,genre and much more...
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+<section>
+					<h2>Cool Isnt it?</h2>
+					<p>
+						So, check out the Website and Provide Feedback
+                        <button class="btn btn-success" type="button">Start Here</button>
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+</div>
+    </div>
+<ul id="animation" style="display:none;">
+    <table>
+        
+    <tr><td><li>one</li><li>two</li><li>three</li><li>four</li></td></tr>
+    
+</ul>
+</div>    
+
+<script>
+    Reveal.initialize([])
+    </script>
+
+

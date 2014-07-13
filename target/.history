@@ -1,0 +1,8 @@
+ls
+paly
+play
+ activator run
+activator run
+start -Dapplication.secret=abcdefghijk
+play install gae-1.6.0
+install gae-1.6.0
